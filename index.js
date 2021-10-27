@@ -107,7 +107,7 @@ changetheme.addEventListener("click", function(e) {
     } else {
         enableDarkMode();
     }
-    location.reload();
+//     location.reload();
 })
 
 let count = 0,
