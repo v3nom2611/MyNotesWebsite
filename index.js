@@ -187,6 +187,8 @@ add.addEventListener("click", function(e) {
     addNote.classList.remove("none");
     impstar.classList.add("none");
     nimpstar.classList.add("none");
+    ta1.value = "";
+    ta2.value = "";
     ta1.placeholder = "Enter Your Title...";
     ta2.placeholder = "Enter Your Content...";
 })
@@ -843,6 +845,8 @@ search.addEventListener("click", function(e) {
     row2.classList.add("none");
     row3.classList.add("none");
     ta2.classList.add("none");
+    ta1.value = "";
+    ta2.value = "";
     ta1.placeholder = "Search Your Note...";
     ta1.addEventListener("input", function() {
         if (ta1.value == "") {
