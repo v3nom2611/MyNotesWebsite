@@ -23,7 +23,7 @@ let listView = document.querySelector("#li4");
 
 const enableDarkMode = () => {
     let darkmode = localStorage.getItem("darkmode");
-    console.log("dark mode enabled");
+//     console.log("dark mode enabled");
     localStorage.setItem("darkmode", 0);
     document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(27, 26, 26)";
     document.querySelector(".jumbotron").classList.remove("jumboChange");
@@ -55,7 +55,7 @@ const enableDarkMode = () => {
 
 const disableDarkMode = () => {
     let darkmode = localStorage.getItem("darkmode");
-    console.log("dark mode disabled");
+//     console.log("dark mode disabled");
     localStorage.setItem("darkmode", 1);
     document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(238 238 238)";
     document.querySelector(".jumbotron").classList.add("jumboChange");
@@ -174,7 +174,7 @@ sback.addEventListener("click", function(e) {
     ta2.placeholder = "";
 })
 add.addEventListener("click", function(e) {
-    console.log("Creating a note");
+//     console.log("Creating a note");
     Array.from(box).forEach(function(element) {
         element.classList.add("none");
     })
@@ -197,7 +197,7 @@ add.addEventListener("click", function(e) {
 function deleted(index) {
     a = confirm("are you sure u want to delete this note?")
     if (a) {
-        console.log("box number " + index + " will be deleted")
+//         console.log("box number " + index + " will be deleted")
         let notes = localStorage.getItem('notes');
         if (notes == null) {
             notesObj = [];
@@ -270,7 +270,7 @@ addNote.addEventListener("click", function(e) {
         localStorage.setItem('notes', JSON.stringify(notesObj));
         addHead.value = "";
         addBody.value = "";
-        console.log(notesObj);
+//         console.log(notesObj);
         // location.reload();
         showNotes();
     }
@@ -581,7 +581,7 @@ importance.addEventListener("click", function(e) {
         })
     }
     localStorage.setItem('notes', JSON.stringify(notesObj));
-    console.log(notesObj[5]);
+//     console.log(notesObj[5]);
     // location.reload();
     showNotes();
 })
@@ -601,7 +601,7 @@ oldFirst.addEventListener("click", function(e) {
         })
     }
     localStorage.setItem('notes', JSON.stringify(notesObj));
-    console.log(notesObj[6]);
+//     console.log(notesObj[6]);
     // location.reload();
     showNotes();
 })
@@ -621,7 +621,7 @@ newFirst.addEventListener("click", function(e) {
         })
     }
     localStorage.setItem('notes', JSON.stringify(notesObj));
-    console.log(notesObj[7]);
+//     console.log(notesObj[7]);
     // location.reload();
     showNotes();
 })
@@ -664,7 +664,7 @@ function inside(index) {
 
 function constru(index) {
     this.index = index;
-    console.log(this.index + " is given");
+//     console.log(this.index + " is given");
 }
 
 updateNote.addEventListener("click", function(e) {
